@@ -1,0 +1,163 @@
+/**
+* Import Bootstrap
+*/
+@import "~bootstrap/scss/bootstrap";
+
+/**
+* Import Normalize CSS
+*/
+@import "~normalize.css/normalize.css";
+
+/**
+* Import Font
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/**
+* Global
+*/
+* {
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/**
+* Header
+*/
+.header {
+    background-color: #fff;
+    padding: 20px 0;
+    //border-bottom: 1px solid #eee;
+    height: 90px;
+
+    .header-inner{
+        display: flex;
+        justify-content: space-between;
+
+        .header-logo{
+
+            a{
+
+                img{
+                    width: 100px;
+                }
+            }
+        }
+
+        .header-nav{
+            padding-top: 12px;
+
+            ul{
+
+                li{
+                    display: inline-block;
+
+                    a{
+                        color: #000;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 14px;
+                        padding: 0 10px;
+                    }
+                }
+
+                li:hover{
+                        color: #000;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 14px;
+                        padding-bottom: 10px;
+                        border-bottom: 2px solid #000;
+                }
+            }
+        }
+    }
+}
+
+/**
+* Page: Home
+*/
+.page-home{
+
+    .home-top{
+        padding-top: 100px;
+        padding-bottom: 130px;
+
+        .home-top-inner{
+
+            .home-top-content{
+
+                p{
+                    font-size: 2em;
+                    font-weight: 500;
+                    color: #000;
+                    margin-bottom: 0;
+                }
+
+                a{
+                    background: #000;
+                    margin-top: 25px;
+
+                    border: 1px solid #000;
+                    padding: 15px 30px;
+                }
+            }
+        }
+    }
+
+    .home-banner{
+        background: url(https://images.squarespace-cdn.com/content/v1/624b3c6d42478d55293db95f/1649097844620-2ELXRA4K0ZDGPDZY80LW/MHeiderich_ReflexionenZwei-05-copy.jpg);
+        background-size: cover;
+        background-position: center;
+
+        height: 500px;
+    }
+
+    .home-services-content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        h2{
+            font-size: 2em;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 0;
+        }
+
+        p{
+            font-size: 1.2em;
+            font-weight: 300;
+            color: #000;
+            margin-bottom: 0;
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .home-services-list{
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+            .home-services-list-item{
+
+            }
+
+        }
+
+
+        a{
+            background: #000;
+            margin-top: 25px;
+
+            border: 1px solid #000;
+            padding: 15px 30px;
+        }
+    }
+}
