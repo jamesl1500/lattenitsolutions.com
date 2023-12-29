@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Pages
 import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
 
 // Import style
 import './static/scss/style.scss';
@@ -12,7 +14,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<h1>About</h1>} />
+        <Route path="about" element={<About />} />
+        <Route path='services' element={<Services />} />
       </Routes>
     </BrowserRouter>
   );

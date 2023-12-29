@@ -81,6 +81,68 @@ body {
 }
 
 /**
+* Footer
+*/  
+.footer{
+    background-color: #000;
+    padding: 20px 0;
+
+    .footer-inner{
+        display: flex;
+        justify-content: space-between;
+
+        .footer-logo{
+
+            a{
+                text-decoration: none;
+
+                h2{
+                    color: #fff;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                }
+
+                p{
+                    color: #fff;
+                    font-size: 1em;
+                    font-weight: 300;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .footer-nav{
+            padding-top: 12px;
+
+            ul{
+
+                li{
+                    display: inline-block;
+
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 14px;
+                        padding: 0 10px;
+                    }
+                }
+
+                li:hover{
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 14px;
+                        padding-bottom: 10px;
+                        border-bottom: 2px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+/**
 * Page: Home
 */
 .page-home{
@@ -160,6 +222,215 @@ body {
 
             border: 1px solid #000;
             padding: 15px 30px;
+        }
+    }
+}
+
+/**
+* Page: Home
+*/
+.page-about{
+
+    .about-top{
+        padding-top: 100px;
+        padding-bottom: 50px;
+
+        .about-top-inner{
+
+            .about-top-content{
+
+                h2{
+                    font-size: 3em;
+                    font-weight: 500;
+                    color: #000;
+                    margin-bottom: 0;
+                }
+
+                p{
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    color: #000;
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+
+    .about-banner{
+        background: url(https://images.squarespace-cdn.com/content/v1/624b3c6d42478d55293db95f/1649097844620-2ELXRA4K0ZDGPDZY80LW/MHeiderich_ReflexionenZwei-05-copy.jpg);
+        background-size: cover;
+        background-position: center;
+
+        height: 300px;
+    }
+
+
+    .about-content{
+        padding-bottom: 50px;
+
+        h2{
+            font-size: 3em;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 0;
+        }
+
+        p{
+            font-size: 1.2em;
+            font-weight: 300;
+            color: #000;
+            margin-bottom: 0;
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        a{
+            background: #000;
+            margin-top: 25px;
+
+            border: 1px solid #000;
+            padding: 15px 30px;
+        }
+    }
+
+    .about-team{
+
+        .about-team-inner{
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            h2{
+                font-size: 3em;
+                font-weight: 500;
+                color: #000;
+                margin-bottom: 0;
+            }
+
+            p{
+                font-size: 1.2em;
+                font-weight: 300;
+                color: #000;
+                margin-bottom: 0;
+
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            .about-team-list{
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+
+                .about-team-list-item{
+                    
+                    .about-team-list-item-content{
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+
+                        img{
+                            width: 150px;
+                            border-radius: 50%;
+                            padding-bottom: 10px;
+                        }
+
+                        h3{
+                            font-size: 1.5em;
+                            font-weight: 500;
+                            color: #000;
+                            margin-bottom: 0;
+                        }
+
+                        p{
+                            font-size: 1.2em;
+                            font-weight: 300;
+                            color: #000;
+                            margin-bottom: 0;
+
+                            padding-top: 0px;
+                            padding-bottom: 15px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/**
+* Page: Services
+*/
+.page-services{
+
+    .services-top{
+        padding-top: 100px;
+        padding-bottom: 130px;
+
+        .services-top-inner{
+
+            .services-top-content{
+
+                h2{
+                    font-size: 3em;
+                    font-weight: 500;
+                    color: #000;
+                    margin-bottom: 0;
+                }
+
+                p{
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    color: #000;
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+
+    .services-banner{
+        background: url(https://images.squarespace-cdn.com/content/v1/624b3c6d42478d55293db95f/1649097844620-2ELXRA4K0ZDGPDZY80LW/MHeiderich_ReflexionenZwei-05-copy.jpg);
+        background-size: cover;
+        background-position: center;
+
+        height: 300px;
+    }
+    
+    .services-content{
+        padding-bottom: 50px;
+
+        .services-content-inner{
+
+            .services-content-content{
+
+                p{
+                    font-size: 1.2em;
+                    font-weight: 300;
+                    color: #000;
+                    margin-bottom: 0;
+
+                    padding-top: 40px;
+                    padding-bottom: 15px;
+                }
+
+                .services-list{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 30px;
+
+                    // Only have 2 items per row
+                    flex-wrap: wrap;
+
+                    padding-top: 25px;
+
+                    .services-list-item{
+
+                    }
+
+                }
+            }
         }
     }
 }
